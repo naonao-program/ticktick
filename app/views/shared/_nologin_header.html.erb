@@ -1,0 +1,62 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light">
+    <div class="container">
+      <a class= "navbar-brand" href="/">TickTick</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class ="navbar-nav ml-auto">
+          <li class="nav-item">
+            <%= link_to home_about_path, class: 'nav-link' do%>
+              特徴
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to home_app_path, class: 'nav-link' do%>
+              アプリ
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to home_premium_path ,class: 'nav-link' do%>
+              プレミアム
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to new_user_session_path, class: 'nav-link' do%>
+              サインイン
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to new_user_registration_path, class: 'nav-link' do%>
+              無料で始める
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+  <div class="container-fluid">
+    <div class="slider-text d-md-flex align-items-center">
+      <div class="one-forth pr-md-4 ftco-animate align-self-md-center fadeInUp ftco-animated">
+        <h2 class="mb-4">もっと多くの目標を達成<br>クリエイティブ能力を構築</h2>
+        <p class="mb-md-5 mb-sm-3">創造的な発想をして、毎日を楽しんで過ごしてください！</p>
+        <%= link_to '無料で始める', new_user_registration_path, class: 'btn btn-primary px-4 py-3' %>
+      </div>
+      <div class="one-half align-self-md-end align-self-sm-center">
+        <div class="slider-carousel owl-carousel owl-loaded owl-drag">
+          <div class="owl-stage-outer">
+            <div class="owl-stage" >
+              <div class="owl-item cloned">
+                <div class="item">
+                  <%= image_tag 'ticktick2.png', class:"img-fluid img col-md-8 bg-auto"%>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
